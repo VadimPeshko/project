@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VPportfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-0c38nfCMzF8w8DBI+9nTWzApOpr1z0WuyswL4y6x/2ZTtmj/Ki5TedKeUcFusC/k" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+<body>
+    <!--Хедер-->
+    <section class="section-outer section-header">
+        <div class="section-inner">
+            <div class="section-header-logo"><a href="index.html">Vadim Peshko<span> my portfolio</span></a></div> 
+            <div class="section-header-wrapper">
+                <div class="section-header-wrapper-menu">
+                        <li class="index">Главная</li>
+                        <li class="about">Обо мне</li>
+                        <li class="portfolio">Мои работы</li>
+                        <li class="contact">Контакты</li>
+                </div>
+            </div>          
+        </div>
+    </section>
+
+    <!--Подвал-->
+    <section class="section-outer section-footer">
+        <div class="section-inner">
+            <div class="section-footer__logo"><a href="index.html">Vadim Peshko</a></div>
+            <div class="section-footer-social-content">
+                <div class="section-footer-content__title">Я в социальных сецях:</div>
+                <div class="section-footer-content__icon">
+                    <a href="https://vk.com/vadim_peshko" target="a_blank"><i class="fab fa-vk"></i></a>
+                    <a href="https://www.instagram.com/vadimpeshko" target="a_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100022560756080" target="a_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="section-footer__phone">+375 (33) 686-05-54</div>
+        </div>
+    </section>
+
+    <!--Всплывающее окно "Обо мне"-->
+    <section class="section-modal-window">
+        <div class="section-modal-window-close"><i class="fas fa-times"></i></div>
+        <div class="section-modal-window-content"> 
+            <div class="section-modal-window-content__title">Немного обо мне</div>
+            <div class="section-modal-window-content__subtitle">Привет, меня зовут Вадим. Я начинающий HTML-верстальщик. В этом портфолио я представил свои работы. Их не так много, но я стараюсь чтобы их количество росло. Разработка сайтов довольно обширная область и быстро развивается. Каждый день я открываю для себя что-то новое.  С этим я повышаю  профессиональные навыки и качество своих работ. Буду рад, если мне выпадет шанс поработать в крупной IT-компании и с интересными проектами и людми, которые поделятся опытом и станут друзьями.</div>
+            <div class="section-modal-window-content__title">Сайт создан с помощью:</div>
+            <div class="section-modal-window-content__subtitle">
+                <li>HTML/CSS (ни каких шаблонов и CMR)</li>
+                <li>Немного JavaScript</li>
+                <li>Flexbox</li>
+                <li>Препроцессор SASS</li>
+                <li>Сборщик Gulp</li>
+                <li>Сайт полностью адаптивный </li>
+                <li>Присутствует кроссбраузерность</li>
+            </div>
+        </div>
+    </section>
+
+    <!--Всплывающее окно "Мои работы"-->
+    <section class="section-modal-window-two">
+            <div class="section-modal-window-close"><i class="fas fa-times"></i></div>
+            <div class="section-modal-window-content"> 
+                <div class="section-modal-window-content__title">Мои работы</div>
+                <div class="section-modal-window-content-img">
+                    <div class="section-modal-window-content-img-box"> 
+                        <div class="section-modal-window-content-img-box__front"><img src="./img/gallery/small/bbcode-img.png" alt="Разработка сайтов"></div>
+                        <div class="section-modal-window-content-img-box__back"><a data-fancybox="gallery" href="./img/gallery/big/bbcode.jpg">Landing page на тему "Разработка сайтов"</a></div>
+                    </div>
+                    <div class="section-modal-window-content-img-box"> 
+                            <div class="section-modal-window-content-img-box__front"><img src="./img/gallery/small/aensi-img.png" alt="Грузоперевозки"></div>
+                            <div class="section-modal-window-content-img-box__back"><a href="http://aensicompany.com" target="a_blank">Landing page на тему "Автомобильные грузоперевозки"</a></div>
+                    </div>
+                    <div class="section-modal-window-content-img-box"> 
+                            <div class="section-modal-window-content-img-box__front"><img src="./img/gallery/small/evac-img.png" alt="Эвакуатор"></div>
+                            <div class="section-modal-window-content-img-box__back"><a data-fancybox="gallery" href="./img/gallery/big/evacuator.jpg">Макет сайта на тему "Эвакуатор в г. Гродно"</a></div>
+                    </div>
+                    <div class="section-modal-window-content-img-box"> 
+                            <div class="section-modal-window-content-img-box__front"><img src="./img/gallery/small/stud-img.png" alt="Веб-студия"></div>
+                            <div class="section-modal-window-content-img-box__back"><a data-fancybox="gallery" href="./img/gallery/big/studio.jpg">Макет сайта на тему "Веб-студия"</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!--Всплывающее окно "Контакты"-->
+    <section class="section-modal-window-three">
+            <div class="section-modal-window-close"><i class="fas fa-times"></i></div>
+            <div class="section-modal-window-content"> 
+                <div class="section-modal-window-content__title">Связаться со мной</div>
+                <form class="form">
+                    <label for="name">Имя</label>
+                    <input type="text" name="name" class="name">
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" class="email">
+                    <label for="message">Сообщение</label> 
+                    <textarea name="message" class="message"></textarea>
+                    <button>Отправить</button>  
+                </form>
+            </div>
+        </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script>
+        $('.index').click(function(){
+            $('.section-modal-window, .section-modal-window-two, .section-modal-window-three').fadeOut();
+            $('.form').trigger('reset');
+        });
+
+        $('.about').click(function(){
+            $('.section-modal-window').fadeIn();
+            $('.section-modal-window-two').fadeOut();
+            $('.section-modal-window-three').fadeOut();
+            $('.form').trigger('reset');
+        });
+
+        $('.portfolio').click(function(){
+            $('.section-modal-window-two').fadeIn();
+            $('.section-modal-window').fadeOut();
+            $('.section-modal-window-three').fadeOut();
+            $('.form').trigger('reset');
+        });
+
+        $('.contact').click(function(){
+            $('.section-modal-window-three').fadeIn();
+            $('.section-modal-window').fadeOut();
+            $('.section-modal-window-two').fadeOut();
+        });
+
+        $('.section-modal-window-close').click(function(){
+            $('.section-modal-window').fadeOut();
+            $('.section-modal-window-two').fadeOut();
+            $('.section-modal-window-three').fadeOut();
+            $('.form').trigger('reset');
+        });
+
+        $('.form').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength:3
+                },
+
+                email: {
+                    required: true,
+                    email: true
+                },
+
+                message: {
+                    required: true,
+                }
+            },
+
+            messages: {
+                name: {
+                    required: 'Имя обезательно должно быть заполнено',
+                    minlength: 'Длина имени должна быть не менее 3-х символов'
+                },
+
+                email: {
+                    required: 'Поле E-mail обезательно должно быть заполнено'
+                },
+
+                message: 'Напишите что-нибудь'
+            }
+        });
+
+    </script>
+</body>
+</html>
