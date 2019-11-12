@@ -1,0 +1,16 @@
+.forcast-list {
+  &__cards {
+    padding: 20px 0px;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+  }
+  &__img {
+    width: 60px;
+    height: 60px;
+  }
+  &__title {
+    li {
+      list-style: none;
+    }
+  }
+}
