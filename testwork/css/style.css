@@ -1,0 +1,248 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  color: #fff;
+}
+
+.inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.dialog {
+  background-color: #efeefb;
+  border: 1px solid #6e71ac;
+  -webkit-box-shadow: 4px 3px 9px 0px black;
+          box-shadow: 4px 3px 9px 0px black;
+  padding: 3px;
+  position: absolute;
+  width: 100%;
+  top: 50vh;
+  -webkit-transform: translate(0, -25vh);
+          transform: translate(0, -25vh);
+}
+
+.dialog-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #6e71ac;
+}
+
+.dialog-header__title {
+  font-size: 18px;
+  padding: 10px;
+  margin: 0px;
+}
+
+.dialog-header__buttons {
+  padding-right: 3px;
+}
+
+.dialog-header__buttons button {
+  background: #f4f3fe;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4f3fe), to(#d1d0e0));
+  background: linear-gradient(180deg, #f4f3fe 0%, #d1d0e0 100%);
+  border: 1px solid #6e71ac;
+  cursor: pointer;
+  outline: none;
+}
+
+.dialog-header__buttons :hover {
+  background: #f4f3fe;
+}
+
+.dialog-header__buttons :active {
+  background: #f4f3fe;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f4f3fe), to(#d1d0e0));
+  background: linear-gradient(0deg, #f4f3fe 0%, #d1d0e0 100%);
+}
+
+.dialog-controls {
+  padding: 20px;
+}
+
+.dialog-controls__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  padding-left: 50px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.dialog-controls__inputs label {
+  width: 10%;
+  font-size: 16px;
+  text-align: right;
+  color: #000;
+  margin-right: 5px;
+}
+
+.dialog-controls__inputs input {
+  width: 89%;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #6e71ac;
+}
+
+.dialog-controls__inputs select {
+  width: 89%;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #6e71ac;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+}
+
+.dialog-controls__btn {
+  position: absolute;
+  right: 6px;
+}
+
+.dialog-controls__btn button {
+  background: #f4f3fe;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4f3fe), to(#d1d0e0));
+  background: linear-gradient(180deg, #f4f3fe 0%, #d1d0e0 100%);
+  border: 1px solid #6e71ac;
+  cursor: pointer;
+  outline: none;
+  height: 30px;
+  margin: -1.5px;
+}
+
+.dialog-controls__btn :hover {
+  background: #f4f3fe;
+}
+
+.dialog-controls__btn :active {
+  background: #f4f3fe;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f4f3fe), to(#d1d0e0));
+  background: linear-gradient(0deg, #f4f3fe 0%, #d1d0e0 100%);
+}
+
+.dialog-controls__buttons {
+  margin-top: 10px;
+  margin-left: 158px;
+}
+
+.dialog-controls__buttons button {
+  background: #f4f3fe;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4f3fe), to(#d1d0e0));
+  background: linear-gradient(180deg, #f4f3fe 0%, #d1d0e0 100%);
+  border: 1px solid #6e71ac;
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 5px;
+  outline: none;
+}
+
+.dialog-controls__buttons button img {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.dialog-controls__buttons :hover {
+  background: #f4f3fe;
+}
+
+.dialog-controls__buttons :active {
+  background: #f4f3fe;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f4f3fe), to(#d1d0e0));
+  background: linear-gradient(0deg, #f4f3fe 0%, #d1d0e0 100%);
+}
+
+.dialog-footer {
+  border-top: 1px solid #838383;
+  background-color: #e5e3f6;
+}
+
+.dialog-footer__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.dialog-footer__left button {
+  border: 1px solid #6366a3;
+  padding: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.dialog-footer__left button img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.dialog-footer__left :hover {
+  background: #f4f3fe;
+}
+
+.dialog-footer__left :active {
+  background: #f4f3fe;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f4f3fe), to(#d1d0e0));
+  background: linear-gradient(0deg, #f4f3fe 0%, #d1d0e0 100%);
+}
+
+.dialog-footer__right button {
+  background-color: #6e71ac;
+  border: 1px solid #6366a3;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.dialog-footer__right :hover {
+  background-color: #7e81b5;
+}
+
+.dialog-footer__right :active {
+  border: 1px solid #000;
+}
+
+.dialog-footer__right :focus {
+  border: 1px solid #000;
+}
+
+.dialog-footer__img {
+  text-align: right;
+}
+
+.dialog-footer__img img {
+  width: 15px;
+}
+
+.dialog-footer__img :hover {
+  cursor: nwse-resize;
+}
+/*# sourceMappingURL=style.css.map */

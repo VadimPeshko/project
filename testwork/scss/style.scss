@@ -1,0 +1,187 @@
+$color-main: #6e71ac;
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  color: #fff;
+}
+
+.inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.dialog {
+  background-color: #efeefb;
+  border: 1px solid $color-main;
+  box-shadow: 4px 3px 9px 0px black;
+  padding: 3px;
+  position: absolute;
+  width: 100%;
+  top: 50vh;
+  transform: translate(0, -25vh);
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-main;
+    &__title {
+      font-size: 18px;
+      padding: 10px;
+      margin: 0px;
+    }
+    &__buttons {
+      padding-right: 3px;
+      button {
+        background: rgb(244,243,254);
+        background: linear-gradient(180deg, rgba(244,243,254,1) 0%, rgba(209,208,224,1) 100%);
+        border: 1px solid $color-main;
+        cursor: pointer;
+        outline: none;
+      }
+      :hover {
+        background: rgb(244,243,254);
+      }
+      :active {
+        background: rgb(244,243,254);
+        background: linear-gradient(0deg, rgba(244,243,254,1) 0%, rgba(209,208,224,1) 100%);
+      }
+    }
+  }
+  &-controls {
+    padding: 20px;
+    &__inputs {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-flow: wrap;
+      padding-left: 50px;
+      position: relative;
+      margin-top: 10px;
+      label {
+        width: 10%;
+        font-size: 16px;
+        text-align: right;
+        color: #000;
+        margin-right: 5px;
+      }
+      input {
+        width: 89%;
+        padding: 5px;
+        font-size: 16px;
+        border: 1px solid $color-main;
+      }
+      select {
+        width: 89%;
+        padding: 5px;
+        font-size: 16px;
+        border: 1px solid $color-main;
+        appearance: none;
+        position: relative;
+      }
+    }
+    &__btn {
+      position: absolute;
+      right: 6px;
+      button {
+        background: rgb(244,243,254);
+        background: linear-gradient(180deg, rgba(244,243,254,1) 0%, rgba(209,208,224,1) 100%);
+        border: 1px solid $color-main;
+        cursor: pointer;
+        outline: none;
+        height: 30px;
+        margin: -1.5px;
+      }
+      :hover {
+        background: rgb(244,243,254);
+      }
+      :active {
+        background: rgb(244,243,254);
+        background: linear-gradient(0deg, rgba(244,243,254,1) 0%, rgba(209,208,224,1) 100%);
+      }
+    }
+    &__buttons {
+      margin-top: 10px;
+      margin-left: 158px;
+      button {
+        background: rgb(244,243,254);
+        background: linear-gradient(180deg, rgba(244,243,254,1) 0%, rgba(209,208,224,1) 100%);
+        border: 1px solid $color-main;
+        cursor: pointer;
+        padding: 5px;
+        margin-right: 5px;
+        outline: none;
+        img {
+          margin-right: 5px;
+          margin-left: 5px;
+        }
+      }
+      :hover {
+        background: rgb(244,243,254);
+      }
+      :active {
+        background: rgb(244,243,254);
+        background: linear-gradient(0deg, rgba(244,243,254,1) 0%, rgba(209,208,224,1) 100%);
+      }
+    }
+  }
+  &-footer {
+    border-top: 1px solid #838383;
+    background-color: #e5e3f6;
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    &__left {
+      button {
+        border: 1px solid #6366a3;
+        padding: 5px;
+        cursor: pointer;
+        outline: none;
+        img {
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
+      :hover {
+        background: rgb(244,243,254);
+      }
+      :active {
+        background: rgb(244,243,254);
+        background: linear-gradient(0deg, rgba(244,243,254,1) 0%, rgba(209,208,224,1) 100%);
+      }
+    }
+    &__right {
+      button {
+        background-color: $color-main;
+        border: 1px solid #6366a3;
+        padding: 5px 10px;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+      }
+      :hover {
+        background-color: lighten($color: $color-main, $amount: 5%);
+      }
+      :active {
+        border: 1px solid #000;
+      }
+      :focus {
+        border: 1px solid #000;
+      }
+    }
+    &__img {
+      text-align: right;
+      img {
+        width: 15px;
+      }
+      :hover {
+        cursor: nwse-resize;
+      }
+    }
+  }
+}
